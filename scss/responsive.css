@@ -1,0 +1,99 @@
+/*************************
+My responsive styles for FEWD - 2
+Robert Manolis
+Milwaukie, OR - 4/6/2017
+*************************/
+
+/********Tablet**********/
+@media screen and (min-width: 768px) {
+	.avatar_intro_container, .portfolio ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.name_nav_container, .avatar_intro_container {
+		width: 750px;
+		margin: auto;
+		justify-content: space-around;
+	}
+	
+	header h1, header ul, header li {
+		display: inline-block;
+	}
+
+	header a {
+		background: none;
+		margin: 5px;
+		padding: 10px 0px;
+		width: 90px;
+		box-shadow: none;
+	}
+	
+	header .avatar-container {
+		order: 2;
+	}
+	
+	header p {
+		text-align: left;
+	}
+	
+	.contact p {
+		width: 750px;
+	}
+	
+	footer li {
+		display: inline-block;
+		margin: auto 10px;
+	}
+
+	footer li:nth-of-type(1) {
+		display: none;
+	}
+}
+	
+/************************/
+
+
+/********Desktop**********/
+@media screen and (min-width: 1024px) {
+	.header_inner_wrap, .portfolio, .footer_inner_wrap {
+		max-width: 1024px;
+		width: auto;
+		margin: auto;
+	}
+	
+	.name_nav_container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.name_nav_container, .avatar_intro_container {
+		max-width: 1024px;
+		width: auto;
+		justify-content: space-between;
+	}
+	
+	header h1 {
+		margin-left: 25px;
+	}
+	
+	header p {
+		margin-left: 25px;
+		width: 420px
+	}
+	
+	header .avatar-container {
+		margin-right: 25px;
+	}
+	
+	.portfolio {
+		max-width: 1024px;
+	}
+	
+	
+}
+
+	
+/************************/
