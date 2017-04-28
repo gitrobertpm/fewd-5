@@ -1,0 +1,11 @@
+
+// Radius, box-shadow
+%radBox {
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px $shadow, 1px 1px 3px $whiteShadow inset;
+}
+
+// common element size
+%commonSize {
+	width: 290px;
+}

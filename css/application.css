@@ -1,0 +1,228 @@
+/********FONTS************
+font-family: 'Roboto', sans-serif; - 300, 700
+font-family: 'Macondo', cursive; - 400
+*************************/
+/*************************
+My base styles for FEWD - 2
+Robert Manolis
+Milwaukie, OR - 4/6/2017
+*************************/
+/********Base/Resets**********/
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+hr {
+  width: 90%;
+  max-width: 1000px;
+  height: 2px;
+  background-color: rgba(200, 200, 200, 0.5);
+  border: none; }
+
+/******************************/
+body {
+  text-align: center; }
+
+h1, h3 {
+  font-size: auto;
+  line-height: auto;
+  font-weight: bold;
+  color: initial;
+  font-family: "Macondo", cursive; }
+
+p, li {
+  font-size: auto;
+  line-height: auto;
+  font-weight: 300;
+  color: initial;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  font-size: initial;
+  line-height: auto;
+  font-weight: 700;
+  color: rgba(50, 50, 50, 0.9);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: all 0.5s; }
+  a:hover {
+    color: rgba(245, 245, 245, 0.9);
+    background: rgba(10, 26, 50, 0.9); }
+
+/********Header**********/
+header {
+  background: rgba(225, 225, 225, 0.9);
+  padding: 20px 0px;
+  box-shadow: 0px 3px 3px rgba(50, 50, 50, 0.3); }
+  header a {
+    display: block;
+    background: rgba(245, 245, 245, 0.9);
+    width: 290px;
+    margin: 5px auto;
+    padding: 10px 0px; }
+    @media (min-width: 768px) {
+      header a {
+        background: none;
+        margin: 5px;
+        padding: 10px 0px;
+        width: 90px;
+        box-shadow: none; } }
+  header p {
+    margin: auto; }
+    @media (min-width: 768px) {
+      header p {
+        text-align: left; } }
+    @media (min-width: 1024px) {
+      header p {
+        margin-left: 25px;
+        width: 420px; } }
+  @media (min-width: 768px) {
+    header h1, header ul, header li {
+      display: inline-block; } }
+  @media (min-width: 1024px) {
+    header h1 {
+      margin-left: 25px; } }
+
+@media (min-width: 1024px) {
+  .header_inner_wrap {
+    max-width: 1024px;
+    width: auto;
+    margin: auto; } }
+
+@media (min-width: 768px) {
+  .avatar_intro_container {
+    display: flex;
+    width: 750px;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+@media (min-width: 1024px) {
+  .avatar_intro_container {
+    max-width: 1024px;
+    width: auto;
+    justify-content: space-between; } }
+
+@media (min-width: 768px) {
+  .name_nav_container {
+    width: 750px;
+    margin: auto;
+    justify-content: space-around; } }
+@media (min-width: 1024px) {
+  .name_nav_container {
+    max-width: 1024px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+.avatar-container {
+  background: rgba(200, 200, 200, 0.5);
+  margin: 25px auto;
+  padding: 15px 0px 20px; }
+  @media (min-width: 768px) {
+    .avatar-container {
+      order: 2; } }
+  @media (min-width: 1024px) {
+    .avatar-container {
+      margin-right: 25px; } }
+
+/********Portfolio******/
+@media (min-width: 1024px) {
+  .portfolio {
+    max-width: 1024px;
+    width: auto;
+    margin: auto; } }
+.portfolio h1 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+.portfolio li {
+  margin: 25px auto; }
+.portfolio img {
+  margin: auto; }
+  @media (min-width: 768px) {
+    .portfolio img {
+      margin: auto 25px; } }
+.portfolio p {
+  height: 99px;
+  margin: auto; }
+@media (min-width: 768px) {
+  .portfolio ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; } }
+@media (min-width: 768px) {
+  .portfolio li:nth-of-type(8) {
+    order: 9; } }
+@media (min-width: 1024px) {
+  .portfolio li:nth-of-type(9) {
+    order: 9; } }
+
+/************************/
+/********Skills**********/
+.skills {
+  padding: 5px 0px 20px; }
+
+/************************/
+/********Contact*********/
+.contact {
+  background: rgba(245, 245, 245, 0.9);
+  padding: 10px 0px; }
+  .contact p {
+    width: 290px;
+    margin: auto; }
+    @media (min-width: 768px) {
+      .contact p {
+        width: 750px; } }
+
+/************************/
+/********Footer**********/
+footer {
+  background: rgba(245, 245, 245, 0.9);
+  padding: 10px 0px; }
+  footer h3 {
+    width: 150px; }
+  footer li {
+    display: none; }
+    @media (min-width: 768px) {
+      footer li {
+        display: inline-block;
+        margin: auto 10px; } }
+  footer a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 10px; }
+  footer li:nth-of-type(1) {
+    display: inline-block; }
+    @media (min-width: 768px) {
+      footer li:nth-of-type(1) {
+        display: none; } }
+
+.footer_inner_wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media (min-width: 1024px) {
+    .footer_inner_wrap {
+      max-width: 1024px;
+      width: auto;
+      margin: auto; } }
+
+/************************/
+header a, .avatar-container, .portfolio img {
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.3), 1px 1px 3px rgba(250, 250, 250, 0.3) inset; }
+
+header p, .avatar-container, .portfolio img, .portfolio p {
+  width: 290px; }
+
+/*# sourceMappingURL=application.css.map */

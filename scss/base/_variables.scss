@@ -1,0 +1,59 @@
+///********variables************
+// - Colors
+// - Breakpoints
+// - font Stuff
+//******************************/
+
+// Descriptive color variables
+
+$nearBlack       : rgba(50,50,50,0.9);
+$mediumGrey      : rgba(200,200,200,0.5);
+$lightGrey       : rgba(225,225,225,0.9);
+$nearWhite       : rgba(245,245,245,0.9);
+
+$navy            : rgba(10,26,50,0.9);
+
+$gossamer        : rgba(50,50,50,0.3);
+$whiteGossamer   : rgba(250,250,250,0.3);
+
+
+
+
+// Funcitonal color variables
+
+$color-link                  : $nearBlack;
+$color-linkHover             : $nearWhite;
+$color-linkHoverBackground   : $navy;
+
+$color-headerBackground      : $lightGrey;
+$color-headerLinkBackground  : $nearWhite;
+$color-avatarBackground      : $mediumGrey;
+
+$color-contactBackground     : $nearWhite;
+$color-footerBackground      : $nearWhite;
+
+$color-hr                    : $mediumGrey;
+
+$shadow                      : $gossamer;
+$whiteShadow                 : $whiteGossamer;
+
+
+// Media Query Breakpoints
+
+$tablet    : '(min-width: 768px)';
+$desktop   : '(min-width: 1024px)';
+
+
+/********FONTS************
+font-family: 'Roboto', sans-serif; - 300, 700
+font-family: 'Macondo', cursive; - 400
+*************************/
+
+// Descriptive Font Variables
+$stack-roboto     : 'Roboto', sans-serif;
+$stack-macondo    : 'Macondo', cursive;
+
+// Functional Font Variables
+
+$headings    : $stack-macondo;
+$plainText   : $stack-roboto;

@@ -1,0 +1,11 @@
+a {
+	@include text(initial, auto, 700, $color-link);
+	font-family: $plainText; 
+	text-decoration: none;
+	transition: all 0.5s;
+		
+		&:hover {
+			color: $color-linkHover;
+			background: $color-linkHoverBackground;
+		}
+}

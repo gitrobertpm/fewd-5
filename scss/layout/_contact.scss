@@ -1,0 +1,15 @@
+/********Contact*********/
+.contact {
+	background: $color-contactBackground;
+	padding: 10px 0px;
+	
+	p {
+		width: 290px;
+		margin: auto;
+		
+		@include tablet {
+			width: 750px;
+		}
+	}
+}
+/************************/

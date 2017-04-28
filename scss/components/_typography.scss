@@ -1,0 +1,14 @@
+
+body {
+	text-align: center;
+}
+
+h1, h3 {
+	@include text(auto, auto, bold, initial);
+	font-family: $headings; 
+}
+
+p, li {
+	@include text(auto, auto, 300, initial);
+	font-family: $plainText; 
+}

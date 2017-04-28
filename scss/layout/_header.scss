@@ -1,0 +1,107 @@
+/********Header**********/
+header {
+	background: $color-headerBackground;
+	padding: 20px 0px;
+	box-shadow: 0px 3px 3px $shadow;
+	
+	a {
+		@extend %radBox;
+		display: block;
+		background: $color-headerLinkBackground;
+		width: 290px;
+		margin: 5px auto;
+		padding: 10px 0px;
+		
+		@include tablet {
+			background: none;
+			margin: 5px;
+			padding: 10px 0px;
+			width: 90px;
+			box-shadow: none;
+		}
+	}
+	
+	p {
+		@extend %commonSize;
+		margin: auto;
+		
+		@include tablet {
+			text-align: left;
+		}
+		
+		@include desktop {
+			margin-left: 25px;
+			width: 420px
+		}
+	}
+	
+	h1, ul, li {
+		@include tablet {
+			display: inline-block;
+		}
+	}
+	
+	h1 {
+		@include desktop {
+			margin-left: 25px;
+		}
+	}
+}
+
+.header_inner_wrap {
+	@include desktop {
+		max-width: 1024px;
+		width: auto;
+		margin: auto;
+	}
+}
+
+.avatar_intro_container {
+	@include tablet {
+		display: flex;
+		width: 750px;
+		margin: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	
+	@include desktop {
+		max-width: 1024px;
+		width: auto;
+		justify-content: space-between;
+	}
+}
+
+.name_nav_container {
+	@include tablet {
+		width: 750px;
+		margin: auto;
+		justify-content: space-around;
+	}
+	
+	@include desktop {
+		max-width: 1024px;
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.avatar-container {
+	@extend %radBox;
+	@extend %commonSize;
+	background: $color-avatarBackground;
+	margin: 25px auto;
+	padding: 15px 0px 20px;
+	
+	@include tablet {
+		order: 2;
+	}
+	
+	@include desktop {
+		margin-right: 25px;
+	}
+}
